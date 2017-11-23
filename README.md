@@ -1,5 +1,5 @@
-#Login form in React
-A login form application made in React. The fields to enter firstname, lastname, username, email,and password.
+# Login form in React
+A login form application made in React. The fields the user needs to enter are firstname, lastname, username, email,and password.
 
 ## Technologies used
 
@@ -22,7 +22,7 @@ The production environment is available at https://liam345.github.io/
 ## Contributing
 ### How to
 To contribute
-1. Fork this repositoryinto your own github account.
+1. Fork this repository into your own github account.
 2. Clone this repository off your master branch.
 3. Make a branch following this syntax: dev-githubUsername-description
 4. Change what you'd like.
