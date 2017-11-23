@@ -48,7 +48,16 @@ export default class extends React.Component{
             errors.emailError = "Email needs to contain an @ character";
         }
 
+        if(this.state.password.length<8){
+            isError =true;
+            errors.passwordError = "Password needs to be atleast 5 characters long";
+        }
+
         if(isError){
+            console.log("Unpacking this.state");
+            console.log(this.state);
+            console.log("Unpacking errors");
+            console.log(errors);
             this.setState({
                 ...this.state,
                 ...errors

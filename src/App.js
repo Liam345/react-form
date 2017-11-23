@@ -9,7 +9,17 @@ class App extends Component {
     fields:{}
   }
   onSubmit = fields =>{
-    this.setState({fields});
+    const allowedKeys = ['firstName','lastName','userName','email'];
+    const filteredFields = Object.keys(fields)
+    .filter(key => allowedKeys.includes(key))
+    .reduce((obj,key)=>{
+      obj[key] = fields[key];
+      return obj;
+    },{});
+    console.log("Filtered fields");
+    console.log(filteredFields);
+    this.setState({fields:filteredFields});
+      
   }
 
   render() {
